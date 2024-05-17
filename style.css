@@ -1,0 +1,173 @@
+/* Configuração Geral */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container>h2 {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Header */
+
+
+#header_page {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #dad9d9;
+
+}
+
+#header_page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+#header_page nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+#header_page h1 {
+    color: rgb(182, 34, 34);
+}
+
+#header_page nav ul li a {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#link_sports {
+    color: #31c231;
+}
+
+#link_economy {
+    color: #c4c429;
+}
+
+#link_technology {
+    color: #2828e4;
+}
+
+#link_entertainment {
+    color: #e645cb;
+}
+
+/* Sections */
+section {
+    padding-top: 60px;
+}
+
+section h2 {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+article {
+    width: 30%;
+    margin-bottom: 35px;
+}
+
+article img {
+    width: 100%;
+}
+
+article time {
+    color: gray;
+    font-size: small;
+}
+
+article h3 {
+    margin: 10px 0;
+    line-height: 22px;
+
+}
+
+article p {
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+article a {
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+#sports {
+    background-color: #31c23157;
+}
+
+#sports h2,
+#sports h3 {
+    color: #31c231;
+}
+
+#sports a {
+    background-color: #31c231;
+}
+
+#economy {
+    background-color: #f5f5045b;
+}
+
+
+#economy h2,
+#economy h3 {
+    color: #c5c52b;
+}
+
+#economy a {
+    background-color: #d3d32c;
+}
+
+#technology {
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+#technology h2,
+#technology h3 {
+    color: #2828e4;
+}
+
+#technology a {
+    background-color: #2828e4;
+}
+
+#entertainment {
+    background-color: #e645cb4d;
+}
+
+#entertainment h2,
+#entertainment h3 {
+    color: #e645cb;
+}
+
+#entertainment a {
+    background-color: #e645cb;
+}
