@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main>
+        <div class="container">
+            <h2>Compare os números</h2>
+            <form>
+                <label>Insira o número A:</label>
+                <input value="0" id="numA" class="input_number" type="number" required>
+                <label>Insira o número B:</label>
+                <input value="0" id="numB" class="input_number" type="number">
+                <input class="button" type="submit" value="Verificar">
+            </form>
+            <div class="result">O número B é maior !</div>
+            <div class="result2">Opção invalida!</div>
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
+
 </html>
