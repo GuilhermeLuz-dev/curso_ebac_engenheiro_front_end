@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastre-se</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <form id="form-cadastro">
+            <label for="nome-completo">Nome completo:</label>
+            <input type="text" name="nome-completo" id="nome-completo">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+            <label for="endereco-completo">Endereço completo:</label>
+            <input type="text" name="endereco-completo" id="endereco-completo">
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
