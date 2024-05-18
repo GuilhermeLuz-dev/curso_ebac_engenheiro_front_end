@@ -5,27 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
+        <div class="title">
+            <img src="./icons/person_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="Icone de usuário">
+            <h2>Cadastre-se </h2>
+        </div>
+        <hr>
         <form id="form-cadastro">
-            <label for="nome-completo">Nome completo:</label>
-            <input type="text" name="nome-completo" id="nome-completo">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" id="telefone">
-            <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf">
-            <label for="endereco-completo">Endereço completo:</label>
-            <input type="text" name="endereco-completo" id="endereco-completo">
-            <label for="cep">CEP:</label>
-            <input type="text" name="cep" id="cep">
+            <div class="form-input">
+                <label for="nome-completo">Nome completo:</label>
+                <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome completo...">
+            </div>
+            <div class="form-input">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email...">
+            </div>
+            <div class="form-input">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(__) _ ____-____">
+            </div>
+            <div class="form-input">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="___.___.___-__">
+            </div>
+            <div class="form-input">
+                <label for="endereco-completo">Endereço completo:</label>
+                <input type="text" name="endereco" id="endereco-completo" placeholder="Digite seu endereço completo...">
+            </div>
+            <div class="form-input">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="_____-___">
+            </div>
+            <hr>
+            <button type="submit">Enviar</button>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
