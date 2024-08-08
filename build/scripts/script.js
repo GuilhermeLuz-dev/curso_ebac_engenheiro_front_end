@@ -1,0 +1,1 @@
+let buttonAlert=document.querySelector("button");function ಠ_ಠ463(){alert("Alert ativado!")}buttonAlert.addEventListener("click",ಠ_ಠ463);

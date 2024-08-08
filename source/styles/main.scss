@@ -1,0 +1,27 @@
+@use "./variaveis";
+@use "./reset";
+
+body{
+    background-color: variaveis.$secondary-color;
+    height: 100vh;
+}
+
+header {
+    background-color: variaveis.$primary-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    h1 {
+        font-family: variaveis.$default-font;
+        color: variaveis.$light-color;
+    }
+    button{
+        width: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        cursor: pointer;
+        background-color: variaveis.$secondary-color;
+        border: none;
+    }
+}
