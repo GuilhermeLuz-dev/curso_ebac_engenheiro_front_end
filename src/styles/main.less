@@ -1,0 +1,101 @@
+@font-title:'Nerko one', cursive;
+@font-text: 'Roboto', sans-serif;
+@color-primary: #F4CE14;
+@color-light: #F5F7F8;
+@color-dark: #45474B;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-text;
+}
+body{
+    background-color: @color-light;
+}
+
+main{
+    color: @color-dark;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 100px 0;   
+    h1{
+        text-align: center;
+        color: @color-primary;
+        margin-bottom: 10px;
+        font-family: @font-title;
+        padding-bottom: 20px;
+        border-bottom: 1px solid @color-primary;
+    }
+}
+
+.quant-notas{
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    h2{
+        margin-right: 5px;
+    }
+    input{
+        color: @color-dark;
+        max-width: 70px;
+        padding: 10px;
+        background-color: lighten(@color-primary,30%);
+        border-radius: 5px;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+#campos-notas{
+    padding: 25px 0;
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 19.2%);
+    column-gap: 1%;
+    row-gap: 5%;
+    div{
+        background-color: lighten(@color-primary,10%);
+        padding: 10px;
+        border-radius: 5px;
+        color: @color-dark;
+        font-weight: bold;
+        text-align: center;
+        input{
+            margin: 0 auto;
+            display: block;
+            max-width: 70px;
+            font-size: 1.2em;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: @color-light;
+        }
+    }
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(65, 199, 65);
+    cursor: pointer;
+    border-radius: 5px;
+    color: @color-dark;
+    font-size: 1.2em;
+    width: 40%;
+    font-weight: bold;
+    &:hover{
+        background-color:rgb(54, 170, 54);
+    }
+}
+
+#result-container{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lighten(@color-primary,20%);
+}
