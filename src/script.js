@@ -17,12 +17,9 @@ alunos.push(new Aluno("Sofia", 7))
 alunos.push(new Aluno("Pedro", 4))
 
 function alunosAprovados(alunos) {
-    let alunosMediaAlta = []
-    alunos.forEach(aluno => {
-        if (aluno.nota >= 6) {
-            alunosMediaAlta.push(aluno)
-        }
-    });
+    let alunosMediaAlta = alunos.filter((aluno) => { if (aluno.nota >= 6) return aluno })
+
     return alunosMediaAlta;
 }
+
 console.log(alunosAprovados(alunos))
